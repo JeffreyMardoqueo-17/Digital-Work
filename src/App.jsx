@@ -1,12 +1,14 @@
 import { useState } from 'react'
 import NavBar from './components/NavBar'
+import Hero from './components/hero'
 function App() {
 
   return (
     <>
       <div className="">
         <NavBar />
-        <h1>AQUI TODO BIEN</h1>
+        <Hero />
+        <img src="../img/fondos.jpg" alt="" />
       </div>
     </>
   )
