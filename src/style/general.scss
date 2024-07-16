@@ -1,0 +1,25 @@
+$color-primary-light: #FF724C; // Naranja (claro)
+$color-primary-dark: #F4F4F8; // Gris claro (oscuro)
+$color-secondary-light: #FDBF50; // Amarillo (claro)
+$color-secondary-dark: #2A2C41; // Gris oscuro (oscuro)
+$color-background-light: #F4F4F8; // Gris claro (claro)
+$color-background-dark: #FF724C; // Naranja (oscuro)
+$color-text-light: #2A2C41; // Gris oscuro (claro)
+$color-text-dark: #FDBF50; // Amarillo (oscuro)
+$color-grayish: #666; // Grisito
+
+// Variables para modo claro
+$colors: (
+  'light': (
+    primary: $color-primary-light,
+    secondary: $color-secondary-light,
+    background: $color-background-light,
+    text: $color-text-light,
+  ),
+  'dark': (
+    primary: $color-primary-dark,
+    secondary: $color-secondary-dark,
+    background: $color-background-dark,
+    text: $color-text-dark,
+  )
+);
