@@ -1,25 +1,27 @@
-$color-primary-light: #FF724C; // Naranja (claro)
-$color-primary-dark: #F4F4F8; // Gris claro (oscuro)
-$color-secondary-light: #FDBF50; // Amarillo (claro)
-$color-secondary-dark: #2A2C41; // Gris oscuro (oscuro)
-$color-background-light: #F4F4F8; // Gris claro (claro)
-$color-background-dark: #FF724C; // Naranja (oscuro)
-$color-text-light: #2A2C41; // Gris oscuro (claro)
-$color-text-dark: #FDBF50; // Amarillo (oscuro)
-$color-grayish: #666; // Grisito
+// Import Tailwind CSS colors (optional)
+// @use "tailwindcss/colors"; // Uncomment if using Tailwind CSS v3
 
-// Variables para modo claro
+$color-primary-light: #FF724C; // Naranja (light)
+$color-primary-dark: #FF724C; // Gris claro (dark)
+$color-background-light: #F4F4F8; // Gris claro (light)
+$color-background-dark: #212121; // Color de contraste (dark)
+$color-text-light: #3182ce; // Azulito (light)
+$color-text-dark: #ffffff; // Blanco (dark)
+$color-grayish: #4a5568; // Gris oscuro (light)
+$color-gray-light: #cbd5e0; // Grisito más claro (dark)
+
+// Variables for light and dark mode (optional, can use Tailwind classes directly)
 $colors: (
-  'light': (
-    primary: $color-primary-light,
-    secondary: $color-secondary-light,
-    background: $color-background-light,
-    text: $color-text-light,
-  ),
-  'dark': (
-    primary: $color-primary-dark,
-    secondary: $color-secondary-dark,
-    background: $color-background-dark,
-    text: $color-text-dark,
-  )
+    'light': (primary: $color-primary-light,
+        secondary: $color-secondary-light,
+        background: $color-background-light,
+        text: $color-text-light,
+        gray: $color-grayish,
+    ),
+    'dark': (primary: $color-primary-dark,
+        secondary: $color-secondary-dark,
+        background: $color-background-dark,
+        text: $color-text-dark,
+        gray: $color-gray-light,
+    )
 );

@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div className="">
-        {/* <NavBar /> */}
+        <NavBar />
         <h1>AQUI TODO BIEN</h1>
       </div>
     </>

@@ -8,25 +8,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#FF724C', // Naranja
-          dark: '#F4F4F8', // Gris claro (for dark mode)
+        lightTheme: {
+          primary: '#FF724C',
+          background: '#F4F4F8',
+          text: '#3182ce',
+          gray: '#4a5568',
         },
-        secondary: {
-          DEFAULT: '#FDBF50', // Amarillo
-          dark: '#2A2C41', // Gris oscuro (for dark mode)
+        darkTheme: {
+          primary: '#FF724C',
+          background: '#0E2C40',
+          text: '#ffffff',
+          gray: '#cbd5e0',
         },
-        background: {
-          DEFAULT: '#F4F4F8', // Gris claro
-          dark: '#FF724C', // Naranja (for dark mode)
-        },
-        text: {
-          DEFAULT: '#2A2C41', // Gris oscuro
-          dark: '#FDBF50', // Amarillo (for dark mode)
-        },
-      },
-      textColor: {
-        grayish: '#666',
       },
     },
   },
