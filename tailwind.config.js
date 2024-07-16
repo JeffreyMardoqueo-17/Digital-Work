@@ -16,7 +16,7 @@ export default {
         },
         darkTheme: {
           primary: '#FF724C',
-          background: '#0E2C40',
+          background: '#1F2937',
           text: '#ffffff',
           gray: '#cbd5e0',
         },
