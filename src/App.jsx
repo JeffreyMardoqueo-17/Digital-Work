@@ -8,7 +8,6 @@ function App() {
       <div className="">
         <NavBar />
         <Hero />
-        <img src="../img/fondos.jpg" alt="" />
       </div>
     </>
   )
