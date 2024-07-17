@@ -9,16 +9,23 @@ export default {
     extend: {
       colors: {
         lightTheme: {
-          primary: '#FF724C',
+          primary: '#0B34FF',
+          rojo: '#E10000',
           background: '#F4F4F8',
           text: '#3182ce',
           gray: '#4a5568',
+          hoverAzul: '#002AFF',
+          hoverRojo: '#FF0000',
+          amarillo: '#EDFF09'
         },
         darkTheme: {
-          primary: '#FF724C',
+          primary: '#0B34FF',
+          rojo: '#FF0000',
           background: '#1F2937',
           text: '#ffffff',
           gray: '#cbd5e0',
+          hoverAzul: '#002AFF',
+          hoverRojo: '#FF0000',
         },
       },
     },
