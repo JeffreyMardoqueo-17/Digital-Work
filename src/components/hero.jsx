@@ -13,8 +13,8 @@ const Hero = () => {
     };
 
     return (
-        <div>
-            <main className="dark:bg-darkTheme-background bg-white relative overflow-hidden h-full w-full">
+        <div className="w-full">
+            <main className="dark:bg-darkTheme-background bg-white relative overflow-hidden">
                 <header className="h-24 sm:h-32 flex items-center z-30 w-full">
                     <div className="container mx-auto px-6 flex items-center justify-between">
                         <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
@@ -46,7 +46,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </header>
-                <div className={`z-50 fixed top-0 right-0 h-full w-2/3 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className={`z-50 fixed top-0 right-0 h-full w-2/3 bg-lightTheme-background dark:bg-gray-800 shadow-lg transform transition-transform duration-300 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     <button onClick={closeMenu} className="text-gray-800 dark:text-white focus:outline-none absolute top-4 right-4">
                         <FaTimes size={24} />
                     </button>
@@ -68,31 +68,33 @@ const Hero = () => {
                         </a>
                     </nav>
                 </div>
-                <div className="container mx-auto px-6 flex relative py-16">
-                    <div className="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20">
-                        <span className="w-3/12 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
-                        <span className="w-2/4 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
-                        <span className="w-2/12 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
-                        <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none text-lightTheme-primary">
-                            Digital
-                            <span className="text-5xl sm:text-7xl ">
-                                Work
-                            </span>
-                        </h1>
-                        <p className="text-sm sm:text-base text-gray-700 dark:text-white">
-                            Ofrecemos soluciones tecnológicas y personalizadas: desde la reparación de software en teléfonos hasta estampados únicos en tazas y camisetas, además de una amplia gama de productos de librería.
-                        </p>
-                        <div className="flex mt-8">
-                            <button href="#" className="uppercase py-2 px-4 rounded-lg bg-lightTheme-rojo border-2 border-transparent text-white text-md mr-4 hover:bg-lightTheme-hoverRojo">
-                                Descargar catalogo
-                            </button>
-                            <a href="#" className="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-lightTheme-primary text-lightTheme-primary dark:text-white hover:bg-lightTheme-hoverAzul hover:text-lightTheme-amarillo text-md">
-                                Read more
-                            </a>
+                <div className="container mx-auto px-6 py-16">
+                    <div className="flex flex-col md:flex-row md:space-x-8">
+                        <div className="md:w-1/2">
+                            <span className="w-3/12 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
+                            <span className="w-2/4 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
+                            <span className="w-2/12 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
+                            <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black leading-none text-lightTheme-primary">
+                                Digital
+                                <span className="text-5xl sm:text-7xl ">
+                                    Work
+                                </span>
+                            </h1>
+                            <p className="text-sm sm:text-base text-gray-700 dark:text-white mt-4">
+                                Ofrecemos soluciones tecnológicas y personalizadas: desde la reparación de software en teléfonos hasta estampados únicos en tazas y camisetas, además de una amplia gama de productos de librería.
+                            </p>
+                            <div className="flex mt-8">
+                                <button href="#" className="uppercase py-2 px-4 rounded-lg bg-lightTheme-rojo border-2 border-transparent text-white text-md mr-4 hover:bg-lightTheme-hoverRojo">
+                                    Descargar catálogo
+                                </button>
+                                <a href="#" className="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-lightTheme-primary text-lightTheme-primary dark:text-white hover:bg-lightTheme-hoverAzul hover:text-lightTheme-amarillo text-md">
+                                    Read more
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    <div className="hidden sm:block sm:w-1/3 lg:w-3/5 relative">
-                        <img src="../img/taza.png" className="max-w-xs md:max-w-sm m-auto" />
+                        <div className="md:w-1/2 flex justify-center mt-8 md:mt-0">
+                            <img src="../img/taza.png" className="max-w-xs md:max-w-sm m-auto" alt="Taza" />
+                        </div>
                     </div>
                 </div>
             </main>
@@ -101,3 +103,4 @@ const Hero = () => {
 }
 
 export default Hero;
+
