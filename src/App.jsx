@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className='bg-blue-700 h-screen w-screen'>
+      <div className=''>
         {/* <NavBar /> */}
         <Hero />
         <Galeria />
@@ -15,4 +15,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

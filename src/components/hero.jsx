@@ -71,9 +71,10 @@ const Hero = () => {
                 <div className="container mx-auto px-6 py-16">
                     <div className="flex flex-col md:flex-row md:space-x-8">
                         <div className="md:w-1/2">
-                            <span className="w-3/12 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
-                            <span className="w-2/4 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
-                            <span className="w-2/12 h-2 bg-darkTheme-background dark:bg-white mb-4"></span>
+                            {/* Revisar los estilos de los span */}
+                            <span className="w-3/12 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
+                            <span className="w-2/4 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
+                            <span className="w-2/12 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
                             <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black leading-none text-lightTheme-primary">
                                 Digital
                                 <span className="text-5xl sm:text-7xl ">
@@ -103,4 +104,3 @@ const Hero = () => {
 }
 
 export default Hero;
-

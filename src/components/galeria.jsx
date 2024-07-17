@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Galeria = () => {
-    // Datos de ejemplo de imágenes
     const images = [
         '../../img/fondo.webp',
         '../../img/fondos.jpg',
@@ -12,7 +11,7 @@ const Galeria = () => {
     ];
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {images.map((imageUrl, index) => (
                     <div key={index} className="p-2">
