@@ -21,11 +21,10 @@ const Hero = () => {
         }
     };
 
-
     return (
-        <div className="w-full">
-            <main className="dark:bg-darkTheme-background bg-white relative overflow-hidden">
-                <header className=" bg-yellow-300 p-2  flex items-center z-30 w-full">
+        <div className="w-full h-full">
+            <main className="dark:bg-darkTheme-background bg-white relative overflow-hidden h-screen">
+                <header className="p-2  flex items-center z-30 w-full">
                     <div className="container mx-auto px-6 flex items-center justify-between">
                         <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
                             Logo
@@ -40,19 +39,22 @@ const Hero = () => {
                         <div className="flex items-center">
                             <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
                                 <a href="#" className="py-2 px-6 flex">
-                                    Home
+                                    Inicio
                                 </a>
                                 <a href="#" className="py-2 px-6 flex">
-                                    Watch
+                                    Sobre Nosotros
                                 </a>
                                 <a href="#" className="py-2 px-6 flex">
-                                    Product
+                                    Servicios
                                 </a>
                                 <a href="#" className="py-2 px-6 flex">
-                                    Contact
+                                    Beneficios
                                 </a>
                                 <a href="#" className="py-2 px-6 flex">
-                                    Career
+                                    Catalogo
+                                </a>
+                                <a href="#" className="py-2 px-6 flex">
+                                    Contacto
                                 </a>
                             </nav>
                             <div className="lg:hidden flex items-center">
@@ -69,33 +71,35 @@ const Hero = () => {
                     </button>
                     <nav className="flex flex-col p-6 mt-12 text-gray-800 dark:text-white">
                         <a href="#" className="py-2 px-6 flex" onClick={closeMenu}>
-                            Home
+                            Inicio
                         </a>
                         <a href="#" className="py-2 px-6 flex" onClick={closeMenu}>
-                            Watch
+                            Sobre Nosotros
                         </a>
                         <a href="#" className="py-2 px-6 flex" onClick={closeMenu}>
-                            Product
+                            Servicios
                         </a>
                         <a href="#" className="py-2 px-6 flex" onClick={closeMenu}>
-                            Contact
+                            Catalogo
                         </a>
                         <a href="#" className="py-2 px-6 flex" onClick={closeMenu}>
-                            Career
+                            Beneficios
+                        </a>
+                        <a href="#" className="py-2 px-6 flex" onClick={closeMenu}>
+                            Contacto
                         </a>
                     </nav>
                 </div>
-                <div className="container mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between bg-green-600">
-                    <div className="md:w-1/2 md:order-1 md:p-2">
-                        <span className="w-2/4 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
+                <div className=" mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between h-full">
+                    <div className="md:w-1/2 md:order-1 md:p-2 h-full">
+                        <span className="w-4/6 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
                         <span className="w-5/6 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
                         <span className="w-4/12 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
-                        <h1 className="font-bebas-neue uppercase text-7xl  font-black leading-none text-lightTheme-primary">
+                        <h1 className="font-bebas-neue uppercase text-9xl sm:text-8xl font-black leading-none text-lightTheme-primary">
                             Digital
-
                         </h1>
                         <h1 className="font-bebas-neue uppercase font-black leading-none text-lightTheme-primary">
-                            <span className="text-6xl sm:text-7xl  text-lightTheme-rojo font-bold ">
+                            <span className="text-8xl sm:text-7xl text-lightTheme-rojo font-bold">
                                 Work
                             </span>
                         </h1>
@@ -107,11 +111,11 @@ const Hero = () => {
                                 Descargar catálogo
                             </button>
                             <a href="#" className="uppercase py-2 px-4 rounded-lg bg-transparent border-2 border-lightTheme-primary text-lightTheme-primary dark:text-white hover:bg-lightTheme-hoverAzul hover:text-lightTheme-amarillo text-md">
-                                Read more
+                                Leer Más
                             </a>
                         </div>
                     </div>
-                    <div className="md:w-1/2 md:order-2 relative">
+                    <div className="md:w-1/2 md:order-2 relative h-full flex justify-center items-center">
                         <img src='../svg/HeroBG.svg' className="absolute top-0 right-0 w-full h-full object-cover z-0" alt="Background SVG" />
                         <div className="relative">
                             <img src="../img/taza.png" className="max-w-xs md:max-w-sm m-auto z-10 relative" alt="Taza" />

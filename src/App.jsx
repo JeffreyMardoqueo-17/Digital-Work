@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className=''>
+      <div className='bg-lightTheme-background dark:bg-darkTheme-background'>
         {/* <NavBar /> */}
         <Hero />
         <Galeria />

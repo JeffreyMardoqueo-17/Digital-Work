@@ -11,8 +11,8 @@ const Galeria = () => {
     ];
 
     return (
-        <div className="container mx-auto px-4 py-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="container mx-auto px-4 py-8 bg-lightTheme-background dark:bg-darkTheme-background">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
                 {images.map((imageUrl, index) => (
                     <div key={index} className="p-2">
                         <img src={imageUrl} alt={`Image ${index}`} className="rounded-lg shadow-md max-w-full h-auto" />
