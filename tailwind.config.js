@@ -11,13 +11,13 @@ export default {
         lightTheme: {
           primary: '#0B34FF',
           rojo: '#E10000',
-          background: '#F4F4F8',
+          background: '#F8F8F8',
           text: '#3182ce',
           gray: '#4a5568',
           hoverAzul: '#002AFF',
           hoverRojo: '#FF0000',
           amarillo: '#EDFF09',
-          formulario: '#F6F7FC'
+          formulario: '#F7F6F6'
         },
         darkTheme: {
           primary: '#0B34FF',

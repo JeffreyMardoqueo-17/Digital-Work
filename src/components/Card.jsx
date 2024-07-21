@@ -17,7 +17,7 @@ const ImageCarousel = ({ images }) => {
 
 const Card = ({ title, description, images }) => {
     return (
-        <div className="block  rounded-lg bg-white/10 backdrop-blur-md shadow-md dark:bg-gray-800/70 dark:text-white">
+        <div className="block shadow-md rounded-lg bg-white/10 backdrop-blur-md dark:bg-darkTheme-formulario/70 dark:text-white">
             <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <ImageCarousel images={images} />
             </div>
@@ -27,7 +27,7 @@ const Card = ({ title, description, images }) => {
             </div>
             
             <div className="p-6">
-                <button type="button" class="focus:outline-none text-white bg-lightTheme-primary hover:bg-blue-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Descargar Catalogo</button>
+                <button type="button" class="focus:outline-none text-white bg-lightTheme-rojo hover:bg-red-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-red-700 dark:hover:bg-red-700 dark:focus:ring-red-500 focus:ring-red-500">Descargar Catalogo</button>
             </div>
         </div>
     );
