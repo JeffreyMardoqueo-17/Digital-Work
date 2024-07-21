@@ -1,4 +1,4 @@
-// Services.js
+
 import React from 'react';
 import Card from '../components/Card';
 
@@ -28,21 +28,21 @@ const Services = () => {
     ];
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 container mx-auto ">
             <Card
-                title="Card Title 1"
+                title="Productos de Papeleria"
                 description="Some quick example text to build on the card title and make up the bulk of the card's content."
                 listItems={listItems}
                 images={images1}
             />
             <Card
-                title="Card Title 2"
+                title="Estampados"
                 description="Some quick example text to build on the card title and make up the bulk of the card's content."
                 listItems={listItems}
                 images={images2}
             />
             <Card
-                title="Card Title 3"
+                title="Productos Digitales"
                 description="Some quick example text to build on the card title and make up the bulk of the card's content."
                 listItems={listItems}
                 images={images3}

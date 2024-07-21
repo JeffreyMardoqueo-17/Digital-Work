@@ -17,7 +17,7 @@ const ImageCarousel = ({ images }) => {
 
 const Card = ({ title, description, listItems, images }) => {
     return (
-        <div className="block max-w-[18rem] rounded-lg bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+        <div className="block  rounded-lg bg-white/10 backdrop-blur-md shadow-md dark:bg-gray-800/70 dark:text-white">
             <div className="relative overflow-hidden bg-cover bg-no-repeat">
                 <ImageCarousel images={images} />
             </div>
@@ -27,22 +27,13 @@ const Card = ({ title, description, listItems, images }) => {
             </div>
             <ul className="w-full">
                 {listItems.map((item, index) => (
-                    <li key={index} className="w-full border-b-2 border-neutral-100 border-opacity-100 px-6 py-3 dark:border-white/10">
+                    <li key={index} className="w-full border-b-2 border-neutral-100 border-opacity-100 px-6 py-3 dark:border-gray-700">
                         {item}
                     </li>
                 ))}
             </ul>
             <div className="p-6">
-                <a
-                    type="button"
-                    className="pointer-events-auto me-5 inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400">
-                    Card Link
-                </a>
-                <a
-                    type="button"
-                    className="pointer-events-auto inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400">
-                    Another Link
-                </a>
+                <button type="button" class="focus:outline-none text-white bg-lightTheme-primary hover:bg-blue-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900">Descargar Catalogo</button>
             </div>
         </div>
     );

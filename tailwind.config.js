@@ -16,7 +16,8 @@ export default {
           gray: '#4a5568',
           hoverAzul: '#002AFF',
           hoverRojo: '#FF0000',
-          amarillo: '#EDFF09'
+          amarillo: '#EDFF09',
+          formulario: '#F6F7FC'
         },
         darkTheme: {
           primary: '#0B34FF',
@@ -26,8 +27,12 @@ export default {
           gray: '#cbd5e0',
           hoverAzul: '#002AFF',
           hoverRojo: '#FF0000',
+          formulario: '#090D1C'
         },
       },
+      backgroundImage: {
+        'dots-pattern': "url('/path/to/dots-pattern.png')",
+      }
     },
   },
   plugins: [

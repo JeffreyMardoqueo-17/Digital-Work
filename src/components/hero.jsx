@@ -24,7 +24,7 @@ const Hero = () => {
     };
 
     return (
-        <div className="w-full h-full">
+        <div className="container mx-auto h-full">
             <main className="dark:bg-darkTheme-background bg-white relative overflow-hidden h-screen">
                 <header className="p-2 flex items-center z-30 w-full">
                     <div className="container mx-auto px-6 flex items-center justify-between">
