@@ -2,6 +2,7 @@ import { useState } from 'react'
 import NavBar from './components/NavBar'
 import Hero from './components/hero'
 import Galeria from './components/galeria'
+import Services from './sections/Services'
 function App() {
 
   return (
@@ -10,6 +11,7 @@ function App() {
         {/* <NavBar /> */}
         <Hero />
         <Galeria />
+        <Services />
       </div>
     </>
   )

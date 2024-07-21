@@ -21,7 +21,7 @@ export default {
         darkTheme: {
           primary: '#0B34FF',
           rojo: '#FF0000',
-          background: '#1F2937',
+          background: '#01030D',
           text: '#ffffff',
           gray: '#cbd5e0',
           hoverAzul: '#002AFF',

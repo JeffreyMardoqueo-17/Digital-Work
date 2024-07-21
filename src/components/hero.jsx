@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Hero = () => {
-    const [isOpen, setIsOpen] = useState(false); //si esta abierto o cerrado el sidebar / nenu
-    const [isDarkMode, setIsDarkMode] = useState(false); //si esta en mood dark o claro
+    const [isOpen, setIsOpen] = useState(false); //si está abierto o cerrado el sidebar / menú
+    const [isDarkMode, setIsDarkMode] = useState(false); //si está en modo oscuro o claro
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
     const closeMenu = () => {
         setIsOpen(false);
     };
-    //funcion para cambiar el modo claro o oscuro
+
+    //función para cambiar el modo claro u oscuro
     const toggleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
         if (isDarkMode) {
@@ -24,7 +26,7 @@ const Hero = () => {
     return (
         <div className="w-full h-full">
             <main className="dark:bg-darkTheme-background bg-white relative overflow-hidden h-screen">
-                <header className="p-2  flex items-center z-30 w-full">
+                <header className="p-2 flex items-center z-30 w-full">
                     <div className="container mx-auto px-6 flex items-center justify-between">
                         <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
                             Logo
@@ -51,7 +53,7 @@ const Hero = () => {
                                     Beneficios
                                 </a>
                                 <a href="#" className="py-2 px-6 flex">
-                                    Catalogo
+                                    Catálogo
                                 </a>
                                 <a href="#" className="py-2 px-6 flex">
                                     Contacto
@@ -65,7 +67,7 @@ const Hero = () => {
                         </div>
                     </div>
                 </header>
-                <div className={`z-50 fixed top-0 right-0 h-screen w-2/3 bg-lightTheme-background dark:bg-gray-800 shadow-lg transform transition-transform duration-300 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+                <div className={`z-50 fixed top-0 right-0 h-screen w-2/3 bg-lightTheme-background dark:bg-darkTheme-background shadow-lg border-l-2 dark:border-gray-900 border-gray-300 transform transition-transform duration-300 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     <button onClick={closeMenu} className="text-gray-800 dark:text-white focus:outline-none absolute top-4 right-4">
                         <FaTimes size={24} />
                     </button>
@@ -80,7 +82,7 @@ const Hero = () => {
                             Servicios
                         </a>
                         <a href="#" className="py-2 px-6 flex" onClick={closeMenu}>
-                            Catalogo
+                            Catálogo
                         </a>
                         <a href="#" className="py-2 px-6 flex" onClick={closeMenu}>
                             Beneficios
@@ -90,16 +92,16 @@ const Hero = () => {
                         </a>
                     </nav>
                 </div>
-                <div className=" mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between h-full">
+                <div className="mx-auto px-6 py-16 flex flex-col md:flex-row items-center justify-between h-full">
                     <div className="md:w-1/2 md:order-1 md:p-2 h-full">
                         <span className="w-4/6 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
                         <span className="w-5/6 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
                         <span className="w-4/12 h-2 bg-darkTheme-background dark:bg-white mb-4 block"></span>
-                        <h1 className="font-bebas-neue uppercase text-9xl sm:text-8xl font-black leading-none text-lightTheme-primary">
+                        <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black leading-none text-lightTheme-primary">
                             Digital
                         </h1>
                         <h1 className="font-bebas-neue uppercase font-black leading-none text-lightTheme-primary">
-                            <span className="text-8xl sm:text-7xl text-lightTheme-rojo font-bold">
+                            <span className="text-5xl sm:text-7xl text-lightTheme-rojo font-bold">
                                 Work
                             </span>
                         </h1>
