@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
+import PFacturas from '../components/PFacturas';
+import { FaAd } from 'react-icons/fa';
 
 const Services = () => {
     const images1 = [
@@ -20,9 +22,14 @@ const Services = () => {
         "https://tecdn.b-cdn.net/img/new/standard/city/070.jpg"
     ];
 
+    const iconArray = [
+        "https://via.placeholder.com/150",  // Reemplaza con la ruta de tu imagen
+       
+    ];
+
     return (
         <div className="bg-dots-pattern bg-cover p-4 container mx-auto">
-            <h1 className="text-3xl font-bold text-center mb-8 dark:text-white">TIPOS DE SERVICIOS</h1>
+            <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">TIPOS DE SERVICIOS</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 container mx-auto">
                 <Card
                     title="Productos de Papelería"
@@ -40,6 +47,8 @@ const Services = () => {
                     images={images3}
                 />
             </div>
+            <h2 className="text-3xl font-bold text-center mb-8 dark:text-white">Pagos de facturas</h2>
+            <PFacturas icons={iconArray} />
         </div>
     );
 }

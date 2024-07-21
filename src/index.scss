@@ -5,7 +5,7 @@
 /* //estilo de la barra de desplasamiento */
 ::selection {
     background-color: #F5F5F5;
-    /* Cambia el color de fondo de la selección */  
+    /* Cambia el color de fondo de la selección */
     /* Cambia el color del texto seleccionado */
 }
 
@@ -43,9 +43,27 @@
     background: #aba9a9;
     cursor: pointer;
 }
-.dark ::-webkit-scrollbar-thumb:hover{
+
+.dark ::-webkit-scrollbar-thumb:hover {
     background: #363636;
 }
-.container{
-    width:100%;
+
+.container {
+    width: 100%;
+}
+
+/* styles.css */
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    display: flex;
+    animation: scroll 5s linear infinite;
 }
