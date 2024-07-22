@@ -67,3 +67,17 @@
     display: flex;
     animation: scroll 5s linear infinite;
 }
+
+//animacion para svg de pago
+@keyframes custom-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.custom-bounce {
+  animation: custom-bounce 2s infinite;
+}
