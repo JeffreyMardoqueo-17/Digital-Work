@@ -5,6 +5,7 @@ import Galeria from './components/galeria'
 import Services from './sections/Services'
 import Beneficios from './components/beneficios'
 import Beneficies from './sections/beneficies'
+import Pagos from './sections/Pagos'
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
         <Beneficies />
 
         <Services />
+        <Pagos />
         {/* <Galeria /> */}
       </div>
     </>
