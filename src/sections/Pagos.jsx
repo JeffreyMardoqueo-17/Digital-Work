@@ -3,7 +3,7 @@ import React from 'react';
 const Pagos = () => {
     return (
         <div className='gradiente container mx-auto'>
-            <div className='mx-auto p-6 backdrop-filter backdrop-blur-xl bg-white bg-opacity-30 container'>
+            <div className='mx-auto p-6 backdrop-filter backdrop-blur-xl bg-white bg-opacity-30 container h-3/4'>
                 <div className="flex flex-col md:flex-row p-6">
                     {/* Lado izquierdo */}
                     <div className="flex justify-center items-center md:w-1/2 h-auto p-16">

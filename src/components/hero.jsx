@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Hero = () => {
-    const [isOpen, setIsOpen] = useState(false); //si está abierto o cerrado el sidebar / menú
-    const [isDarkMode, setIsDarkMode] = useState(false); //si está en modo oscuro o claro
+    const [isOpen, setIsOpen] = useState(false); // si está abierto o cerrado el sidebar / menú
+    const [isDarkMode, setIsDarkMode] = useState(false); // si está en modo oscuro o claro
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -13,7 +13,7 @@ const Hero = () => {
         setIsOpen(false);
     };
 
-    //función para cambiar el modo claro u oscuro
+    // función para cambiar el modo claro u oscuro
     const toggleDarkMode = () => {
         setIsDarkMode(!isDarkMode);
         if (isDarkMode) {
@@ -25,48 +25,48 @@ const Hero = () => {
 
     return (
         <div className="container mx-auto h-full">
-            <main className="dark:bg-darkTheme-background bg-lightTheme-background relative overflow-hidden h-screen">
-                <header className="p-2 flex items-center z-30 w-full">
-                    <div className="container mx-auto px-6 flex items-center justify-between">
-                        <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
-                            Logo
-                        </div>
-                        <button
-                            onClick={toggleDarkMode}
-                            type="button"
-                            className="inline-flex items-center p-2 w-10 h-auto justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        >
-                            {isDarkMode ? '🌞' : '🌜'}
-                        </button>
-                        <div className="flex items-center">
-                            <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
-                                <a href="#" className="py-2 px-6 flex">
-                                    Inicio
-                                </a>
-                                <a href="#" className="py-2 px-6 flex">
-                                    Sobre Nosotros
-                                </a>
-                                <a href="#" className="py-2 px-6 flex">
-                                    Servicios
-                                </a>
-                                <a href="#" className="py-2 px-6 flex">
-                                    Beneficios
-                                </a>
-                                <a href="#" className="py-2 px-6 flex">
-                                    Catálogo
-                                </a>
-                                <a href="#" className="py-2 px-6 flex">
-                                    Contacto
-                                </a>
-                            </nav>
-                            <div className="lg:hidden flex items-center">
-                                <button onClick={toggleMenu} className="text-gray-800 dark:text-white focus:outline-none">
-                                    {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-                                </button>
-                            </div>
+            <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/30 dark:bg-black/30 p-2 flex items-center z-50">
+                <div className="container mx-auto px-6 flex items-center justify-between">
+                    <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
+                        Logo
+                    </div>
+                    <button
+                        onClick={toggleDarkMode}
+                        type="button"
+                        className="inline-flex items-center p-2 w-10 h-auto justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    >
+                        {isDarkMode ? '🌞' : '🌜'}
+                    </button>
+                    <div className="flex items-center">
+                        <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+                            <a href="#" className="py-2 px-6 flex">
+                                Inicio
+                            </a>
+                            <a href="#" className="py-2 px-6 flex">
+                                Sobre Nosotros
+                            </a>
+                            <a href="#" className="py-2 px-6 flex">
+                                Servicios
+                            </a>
+                            <a href="#" className="py-2 px-6 flex">
+                                Beneficios
+                            </a>
+                            <a href="#" className="py-2 px-6 flex">
+                                Catálogo
+                            </a>
+                            <a href="#" className="py-2 px-6 flex">
+                                Contacto
+                            </a>
+                        </nav>
+                        <div className="lg:hidden flex items-center">
+                            <button onClick={toggleMenu} className="text-gray-800 dark:text-white focus:outline-none">
+                                {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                            </button>
                         </div>
                     </div>
-                </header>
+                </div>
+            </header>
+            <main className="dark:bg-darkTheme-background bg-lightTheme-background relative overflow-hidden h-screen pt-16">
                 <div className={`z-50 fixed top-0 right-0 h-screen w-2/3 bg-lightTheme-background dark:bg-darkTheme-background shadow-lg border-l-2 dark:border-gray-900 border-gray-300 transform transition-transform duration-300 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     <button onClick={closeMenu} className="text-gray-800 dark:text-white focus:outline-none absolute top-4 right-4">
                         <FaTimes size={24} />
@@ -117,10 +117,10 @@ const Hero = () => {
                             </a>
                         </div>
                     </div>
-                    <div className="md:w-1/2 md:order-2 relative h-full flex justify-center items-center">
+                    <div className="md:w-1/2 md:order-2 relative h-full flex justify-center items-center md:h-4/6 sm:h-4/6 ">
                         <img src='../svg/HeroBG.svg' className="absolute top-0 right-0 w-full h-full object-cover z-0" alt="Background SVG" />
                         <div className="relative">
-                            <img src="../img/taza.png" className="max-w-xs md:max-w-sm m-auto z-10 relative" alt="Taza" />
+                            <img src="../img/taza.png" className="max-w-xs md:max-w-sm h-4/5 m-auto z-10 relative" alt="Taza" />
                         </div>
                     </div>
                 </div>
