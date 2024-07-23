@@ -2,16 +2,16 @@ import React from 'react';
 
 const Pagos = () => {
     return (
-        <div className='gradiente'>
-            <div className='container mx-auto p-6 backdrop-filter backdrop-blur-md bg-white bg-opacity-30 rounded-lg shadow-lg'>
+        <div className='gradiente container mx-auto'>
+            <div className='mx-auto p-6 backdrop-filter backdrop-blur-xl bg-white bg-opacity-30 container'>
                 <div className="flex flex-col md:flex-row p-6">
                     {/* Lado izquierdo */}
                     <div className="flex justify-center items-center md:w-1/2 h-auto p-16">
-                        <img src="../svg/pagoMujer.svg" alt="Pago Mujer" className="w-2/4 h-auto object-cover rounded-lg" />
+                        <img src="../svg/pagoMujer1.svg" alt="Pago Mujer" className="w-auto h-auto object-cover rounded-lg" />
                     </div>
                     {/* Lado derecho */}
                     <div className="md:w-1/2 p-6 flex flex-col justify-center">
-                        <h2 className="text-2xl font-bold mb-4 text-gray-800">Realiza tus pagos de forma rápida y sencilla</h2>
+                        <h2 className="text-6xl font-bold mb-4 text-lightTheme-primary">Realiza tus pagos de forma rápida y sencilla</h2>
                         <p className="text-gray-700 mb-2">Paga tus facturas de:</p>
                         <ul className="list-disc list-inside text-gray-700">
                             <li>Cable</li>
