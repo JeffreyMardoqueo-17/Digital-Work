@@ -2,7 +2,7 @@ import React from 'react';
 
 const Pagos = () => {
     return (
-        <div className='gradiente container mx-auto px-1'>
+        <div className='gradiente container mx-auto px-1 mb-4'>
             <div className="mx-auto backdrop-filter backdrop-blur-xl bg-white dark:bg-darkTheme-background bg-opacity-30 dark:bg-opacity-30 h-full">
                 <div className='mx-auto p-4 backdrop-filter backdrop-blur-xl bg-white dark:bg-darkTheme-background bg-opacity-40 dark:bg-opacity-30 h-full'>
                     <div className="flex flex-col md:flex-row p-4">
@@ -12,7 +12,7 @@ const Pagos = () => {
                         </div>
                         {/* Lado derecho */}
                         <div className="md:w-1/2 p-4 flex flex-col justify-center">
-                            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-black dark:text-white mb-5">Realiza tus pagos de forma rápida y sencilla</h2>
+                            <h2 className="text-2xl sm:text-4xl md:text-6xl font-bold text-black dark:text-white mb-5">Realiza tus pagos de forma rápida y sencilla</h2>
                             <p className="mb-3 text-gray-500 dark:text-gray-400">
                                 Ahora puedes pagar tus facturas de manera rápida y cómoda visitando nuestro local. Ofrecemos un servicio en el que puedes cancelar tus facturas de <strong className="font-semibold text-gray-900 dark:text-white">cable, internet, energía eléctrica</strong>, entre otros. Todo esto por una pequeña comisión de <strong className="font-semibold text-gray-900 dark:text-white">$0.50</strong>. Ven a nuestro establecimiento y realiza tus pagos de forma segura y eficiente, sin complicaciones ni largas esperas.
                             </p>

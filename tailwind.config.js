@@ -9,7 +9,7 @@ export default {
     extend: {
       colors: {
         lightTheme: {
-          primary: '#0B34FF',
+          primary: '#0859B8',
           rojo: '#E10000',
           background: '#F8F8F8',
           text: '#3182ce',

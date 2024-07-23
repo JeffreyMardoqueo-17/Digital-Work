@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../components/Card';
+import Titulo from '../components/Titulo';
 
 const Services = () => {
     const images1 = [
@@ -22,7 +23,7 @@ const Services = () => {
 
     return (
         <div className="bg-dots-pattern bg-cover p-4 container mx-auto">
-            <h1 className="text-3xl font-bold text-center mb-8 dark:text-white">TIPOS DE SERVICIOS</h1>
+            <Titulo title={'¿Qué Ofrecemos?'}/>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 container mx-auto">
                 <Card
                     title="Productos de Papelería"

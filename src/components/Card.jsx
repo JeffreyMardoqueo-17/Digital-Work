@@ -27,7 +27,7 @@ const Card = ({ title, description, images }) => {
             </div>
             
             <div className="p-6">
-                <button type="button" class="focus:outline-none text-white bg-lightTheme-rojo hover:bg-red-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-red-700 dark:hover:bg-red-700 dark:focus:ring-red-500 focus:ring-red-500">Descargar Catalogo</button>
+                <button type="button" class="focus:outline-none text-white bg-lightTheme-primary hover:bg-blue-600 focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-lightTheme-primary dark:hover:bg-blue-800 dark:focus:ring-red-500 focus:ring-red-500">Descargar Catalogo</button>
             </div>
         </div>
     );

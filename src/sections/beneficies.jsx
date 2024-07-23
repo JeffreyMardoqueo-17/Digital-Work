@@ -1,27 +1,28 @@
 import React from 'react';
 import Beneficios from '../components/beneficios';
-import { FaLeaf, FaStar, FaCoffee, FaShieldAlt } from 'react-icons/fa';
+import { FaBook, FaPrint, FaTools, FaDollarSign } from 'react-icons/fa';
+import Titulo from '../components/Titulo';
 
 const beneficiosData = [
     {
-        icon: <FaLeaf />,
-        title: 'Sostenibilidad',
-        description: 'Nuestro producto está hecho con materiales reciclados para promover la sostenibilidad.',
+        icon: <FaBook />,
+        title: 'Variedad de Productos de Papelería',
+        description: 'Ofrecemos una amplia gama de productos de librería, desde cuadernos y lápices hasta colores y artículos de papelería.',
     },
     {
-        icon: <FaStar />,
-        title: 'Calidad Superior',
-        description: 'Garantizamos la mejor calidad en todos nuestros productos para tu satisfacción.',
+        icon: <FaPrint />,
+        title: 'Servicios Personalizados de Impresión',
+        description: 'Brindamos servicios de estampado en tazas, llaveros, camisas, gorras y termos, adaptados a tus necesidades.',
     },
     {
-        icon: <FaCoffee />,
-        title: 'Energía Eficiente',
-        description: 'Diseñado para maximizar la eficiencia energética y reducir el consumo.',
+        icon: <FaTools />,
+        title: 'Mantenimiento de Dispositivos Electrónicos',
+        description: 'Realizamos mantenimiento y reparaciones de hardware y software para celulares y computadoras, todo en nuestro local.',
     },
     {
-        icon: <FaShieldAlt />,
-        title: 'Seguridad Avanzada',
-        description: 'Nuestros productos están equipados con las últimas tecnologías de seguridad para proteger tus datos.',
+        icon: <FaDollarSign />,
+        title: 'Pago de Facturas y Servicios',
+        description: 'Facilitamos el pago de facturas de diversos servicios, incluyendo internet, en un solo lugar para tu comodidad.',
     },
 ];
 
@@ -30,9 +31,7 @@ const Beneficies = () => {
         <div>
             <section className="py-12 bg-lightTheme-background dark:bg-darkTheme-background">
                 <div className="container mx-auto px-1">
-                    <h2 className="text-2xl font-semibold mb-6 text-center dark:text-white">
-                        Beneficios de Nuestro Producto
-                    </h2>
+                    <Titulo title={'Beneficios'}/>
                     <Beneficios beneficios={beneficiosData} />
                 </div>
             </section>
