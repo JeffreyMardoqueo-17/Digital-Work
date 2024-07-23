@@ -61,11 +61,11 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 200%;
+        width: 300%;
         height: 200%;
         background: rgb(164, 217, 255);
         background: linear-gradient(90deg, rgba(164, 217, 255, 1) 0%, rgba(197, 221, 255, 1) 38%, rgba(197, 221, 255, 1) 80%);
-        border-radius: 80%;
+        border-radius: 65%;
         animation: wave 6s linear infinite;
     }
 
@@ -73,7 +73,6 @@
 .dark .gradiente {
     position: relative;
     overflow: hidden;
-
     &::before {
         content: "";
         position: absolute;
@@ -83,10 +82,10 @@
         height: 200%;
         background: rgb(32, 50, 62);
         background: linear-gradient(90deg, rgb(22, 54, 77) 0%, rgb(10, 30, 57) 38%, rgb(6, 27, 55) 80%);
-        border-radius: 50%;
+        // border-radius: 50%;
         animation: wave 6s linear infinite;
     }
-    
+
 }
 
 @keyframes wave {
