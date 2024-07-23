@@ -30,43 +30,48 @@ const Hero = () => {
                     <div className="uppercase text-gray-800 dark:text-white font-black text-3xl">
                         Logo
                     </div>
-                    <button
-                        onClick={toggleDarkMode}
-                        type="button"
-                        className="inline-flex items-center p-2 w-10 h-auto justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    >
-                        {isDarkMode ? '🌞' : '🌜'}
-                    </button>
-                    <div className="flex items-center">
-                        <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
-                            <a href="#" className="py-2 px-6 flex">
-                                Inicio
-                            </a>
-                            <a href="#" className="py-2 px-6 flex">
-                                Sobre Nosotros
-                            </a>
-                            <a href="#" className="py-2 px-6 flex">
-                                Servicios
-                            </a>
-                            <a href="#" className="py-2 px-6 flex">
-                                Beneficios
-                            </a>
-                            <a href="#" className="py-2 px-6 flex">
-                                Catálogo
-                            </a>
-                            <a href="#" className="py-2 px-6 flex">
-                                Contacto
-                            </a>
-                        </nav>
-                        <div className="lg:hidden flex items-center">
-                            <button onClick={toggleMenu} className="text-gray-800 dark:text-white focus:outline-none">
-                                {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-                            </button>
-                        </div>
+                    <div className="flex items-center lg:hidden">
+                        <button
+                            onClick={toggleDarkMode}
+                            type="button"
+                            className="inline-flex items-center p-2 w-10 h-auto justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        >
+                            {isDarkMode ? '🌞' : '🌜'}
+                        </button>
+                        <button onClick={toggleMenu} className="text-gray-800 dark:text-white focus:outline-none ml-2">
+                            {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                        </button>
                     </div>
+                    <nav className="font-sen text-gray-800 dark:text-white uppercase text-lg lg:flex items-center hidden">
+                        <button
+                            onClick={toggleDarkMode}
+                            type="button"
+                            className="inline-flex items-center p-2 w-10 h-auto justify-center text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        >
+                            {isDarkMode ? '🌞' : '🌜'}
+                        </button>
+                        <a href="#" className="py-2 px-6 flex">
+                            Inicio
+                        </a>
+                        <a href="#" className="py-2 px-6 flex">
+                            Sobre Nosotros
+                        </a>
+                        <a href="#" className="py-2 px-6 flex">
+                            Servicios
+                        </a>
+                        <a href="#" className="py-2 px-6 flex">
+                            Beneficios
+                        </a>
+                        <a href="#" className="py-2 px-6 flex">
+                            Catálogo
+                        </a>
+                        <a href="#" className="py-2 px-6 flex">
+                            Contacto
+                        </a>
+                    </nav>
                 </div>
             </header>
-            <main className="dark:bg-darkTheme-background bg-lightTheme-background relative overflow-hidden h-screen pt-16">
+            <main className="dark:bg-darkTheme-background bg-lightTheme-background relative overflow-hidden h-full pt-16">
                 <div className={`z-50 fixed top-0 right-0 h-screen w-2/3 bg-lightTheme-background dark:bg-darkTheme-background shadow-lg border-l-2 dark:border-gray-900 border-gray-300 transform transition-transform duration-300 lg:hidden ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
                     <button onClick={closeMenu} className="text-gray-800 dark:text-white focus:outline-none absolute top-4 right-4">
                         <FaTimes size={24} />
