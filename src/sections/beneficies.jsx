@@ -1,8 +1,6 @@
-// Beneficies.js
 import React from 'react';
 import Beneficios from '../components/beneficios';
-import { FaLeaf, FaStar, FaCoffee } from 'react-icons/fa';
-
+import { FaLeaf, FaStar, FaCoffee, FaShieldAlt } from 'react-icons/fa';
 
 const beneficiosData = [
     {
@@ -19,6 +17,11 @@ const beneficiosData = [
         icon: <FaCoffee />,
         title: 'Energía Eficiente',
         description: 'Diseñado para maximizar la eficiencia energética y reducir el consumo.',
+    },
+    {
+        icon: <FaShieldAlt />,
+        title: 'Seguridad Avanzada',
+        description: 'Nuestros productos están equipados con las últimas tecnologías de seguridad para proteger tus datos.',
     },
 ];
 
