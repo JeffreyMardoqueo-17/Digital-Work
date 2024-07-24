@@ -8,6 +8,7 @@ import Beneficies from './sections/beneficies'
 import Pagos from './sections/Pagos'
 import Testimonios from './sections/Testimonios'
 import Map from './components/Map'
+import Footer from './sections/Footer'
 function App() {
 
   return (
@@ -21,7 +22,7 @@ function App() {
         <Services />
         <Pagos />
         <Testimonios />
-        <Map />
+        <Footer />
         {/* <Galeria /> */}
       </div>
     </>
